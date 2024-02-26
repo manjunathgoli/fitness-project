@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>fitness-home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style-home.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <h2 class="home-logo">FITNESS GUIDE</h2>
+            <nav class="nav-home">
+                <a href="#exercise">Exercise</a>
+                <a href="#">videos</a>
+                <a href="#">Diet</a>
+                <a href="#">Track</a>
+                <a href="#">Alerts</a>
+                <button id ="btnMenuHome">Menu</button>
+            </nav>
+                <div id="side-menu" class="show-menu">
+                    <ul>
+                        <li><a href=#>1</a></li>
+                        <li><a href=#>1</a></li>
+                        <li><a href=#>1</a></li>
+                    </ul>
+                </div>
+            
+        </header>
+        <div class="container">
+            <h2>HERE A NOOB CAN BECOME A FITNESS FRICK</h2>
+        </div>
+        <div id="exercise" class="exercise">
+            <h2 class="ex"> EXERCISE</h2><hr>
+            <img id="bodyparts" src="img-exe/body-part.png"><h2 class="e">BASIC BODY PARTS</h2>
+            <ul class="bbp-hands">
+                <div class="bbp-types">
+                <h3>HANDS</h3>
+                <ul >
+                    <li><a id="shoulder" href="#bodyparts" onclick="showshoulder()">Shoulders</a></li>
+                    <li><a href="#bodyparts" onclick="showbicep()" >biceps</a></li>
+                    <li><a href="#bodyparts" onclick="showTriceps()" >Triceps</a></li>
+                    <li><a href="#bodyparts" onclick="showForearm()" >Forearm</a></li>
+                </ul>
+            </div>
+            <div class="bbp-types">
+                <h3>CHEST</h3>
+                <ul>
+                    <li><a href="#bodyparts" onclick="showUpperChest()" >Upper chest</a></li>
+                    <li><a href="#bodyparts" onclick="showlowerChest()" >Lower Chest</a></li>
+                    <li><a href="#bodyparts" onclick="showInnerChest()" >Inner chest</a></li>
+                    <li><a href="#bodyparts" onclick="showMiddleChest()" >Middle chest</a></li>
+                </ul>
+            </div>
+                <div class="bbp-types">
+                <h3>BACK</h3>
+                <ul>
+                    <li><a href="#bodyparts" onclick="showTrapezius()" >trapezius</a></li>
+                    <li><a href="#bodyparts" onclick="showLats()" >Lats</a></li>
+                    <li><a href="#bodyparts" onclick="showRhomboids()" >Rhomboids</a></li>
+                    <li><a href="#bodyparts" onclick="showLowerBack()" >lower back</a></li>
+                </ul>
+            </div>
+                <div class="bbp-types">
+                <h3>ABS</h3>
+                <ul>
+                    <li><a href="#bodyparts" onclick="showUpperAbs()" >Upper ABS</a></li>
+                    <li><a href="#bodyparts" onclick="showLowerAbs()" >Lower ABS</a></li>
+                </ul>
+            </div>
+                <div class="bbp-types">
+                <h3>LEGS</h3>
+                <ul>
+                    <li><a href="#bodyparts" onclick="showQuads()" >Quads</a></li>
+                    <li><a href="#bodyparts" onclick="showHamstrings()" >Hamstrings</a></li>
+                    <li><a href="#bodyparts" onclick="showGlutes()" >Glutes</a></li>
+                    <li><a href="#bodyparts" onclick="showClaves()" >Claves</a></li>
+                </ul>
+            </div>
+            </ul>
+            
+        </div>
+        
+        <div id="popup-shoulder" class="popup-shoulder">
+            
+            <img src="img-exe/delt.jpg">
+            <h3>SHOULDERS</h3>
+            <p>Shoulder exercises help build strength and stability in the muscles around your shoulders. Start with shoulder presses using dumbbells or a barbell, lifting weights above your head while standing or sitting. Side lateral raises involve lifting weights out to the sides to target the outer shoulder muscles. Front raises focus on the front of the shoulders, lifting weights straight in front of you. Additionally, bent-over lateral raises help work the rear deltoids, lifting weights to the sides while bending forward. Incorporate these exercises into your routine, aiming for 3 sets of 8-12 repetitions each to improve shoulder strength and definition effectively.</p>
+            <a href="#exercise" onclick="showshoulder()">close</a>
+        </div>
+        <div id="popup-bicep" class="popup-bicep">
+            
+            <img src="img-exe/bicep.jpg">
+            <h3>BICEP</h3>
+            <p>To work your biceps effectively, start with a basic exercise called bicep curls. Grab a pair of dumbbells, stand up straight with your feet shoulder-width apart. Hold the dumbbells at your sides with your palms facing forward. Keep your elbows close to your body and slowly lift the dumbbells towards your shoulders while exhaling. Squeeze your biceps at the top of the movement, then slowly lower the dumbbells back to the starting position while inhaling. Aim for 3 sets of 10-12 repetitions. Remember to start with a weight that challenges you but allows you to maintain proper form throughout the exercise.</p>
+            <a href="#exercise" onclick="showbicep()">close</a>
+        </div>
+        <div id="popup-triceps" class="popup-triceps">
+            
+            <img src="img-exe/triceps.jpg">
+            <h3>TRICEP</h3>
+            <p>Sure! Here's how to do a triceps exercise called tricep dips:<br>
+
+                1. Find a sturdy bench or chair.<br>
+                2. Sit on the edge of the bench with your hands placed next to your hips, fingers pointing forward.<br>
+                3. Slide your hips off the bench and walk your feet forward until your knees are bent at a 90-degree angle.<br>
+                4. Lower your body by bending your elbows until they reach about 90 degrees.<br>
+                5. Push yourself back up to the starting position by straightening your arms.<br>
+                6. Repeat for 3 sets of 10-12 repetitions.<br>
+                
+                Remember to keep your back close to the bench and engage your core throughout the exercise.</p>
+            <a href="#exercise" onclick="showTriceps()">close</a>
+        </div>
+        <div id="popup-forearm" class="popup-forearm">
+            
+            <img src="img-exe/forearm.jpg">
+            <h3>FOREARM</h3>
+            <p>Certainly! One effective forearm exercise is the wrist curl:<br>
+
+                1. Sit on a bench or chair with a dumbbell in each hand.<br>
+                2. Rest your forearms on your thighs, palms facing up, and let your wrists hang over your knees.<br>
+                3. Slowly curl the weights upwards by flexing your wrists, bringing the dumbbells towards your body.<br>
+                4. Pause briefly at the top of the movement, then slowly lower the weights back down.<br>
+                5. Keep your movements controlled and avoid swinging the weights.<br>
+                6. Aim for 3 sets of 10-12 repetitions.<br>
+                
+                This exercise helps strengthen the muscles in your forearms, improving grip strength and wrist stability.</p>
+            <a href="#exercise" onclick="showForearm()">close</a>
+        </div>
+        <div id="popup-upperchest" class="popup-upperchest">
+            
+            <img src="img-exe/upperchest.jpg">
+            <h3>UPPERCHEST</h3>
+            <p>One effective exercise for targeting the upper chest is the incline dumbbell press:<br>
+
+                1. Set an adjustable bench to a 30-45 degree incline.<br>
+                2. Lie back on the bench and hold a dumbbell in each hand at shoulder height, palms facing forward.<br>
+                3. Press the dumbbells upwards until your arms are fully extended, but don't lock your elbows.<br>
+                4. Lower the dumbbells slowly until your elbows are at about a 90-degree angle.<br>
+                5. Press the weights back up to the starting position.<br>
+                6. Aim for 3 sets of 8-12 repetitions.<br>
+                
+                This exercise helps develop strength and definition in the upper chest muscles for a balanced chest workout.</p>
+            <a href="#exercise" onclick="showUpperChest()">close</a>
+        </div>
+        <div id="popup-lowerchest" class="popup-lowerchest">
+            
+            <img src="img-exe/lowerchest.jpg">
+            <h3>LOWERCHEST</h3>
+            <p>Certainly! To target the lower chest effectively, you can perform the decline bench press:<br>
+
+                1. Set up a decline bench at about a 30-45 degree angle.<br>
+                2. Lie down on the bench with your feet securely locked in place.<br>
+                3. Hold a barbell or dumbbells with an overhand grip, slightly wider than shoulder-width apart.<br>
+                4. Lower the weight towards your lower chest, keeping your elbows slightly flared out.<br>
+                5. Press the weight back up to the starting position, fully extending your arms.<br>
+                6. Aim for 3 sets of 8-12 repetitions with proper form and controlled movements.<br>
+                
+                This exercise helps strengthen and sculpt the lower chest muscles effectively.</p>
+                <a href="#exercise" onclick="showLowerChest()">close</a>
+        </div>
+        <div id="popup-innerchest" class="popup-innerchest">
+            
+            <img src="img-exe/innerchest.jpg">
+            <h3>INNERCHEST</h3>
+            <p>To target the inner chest, you can perform cable crossovers:<br>
+
+                1. Set the cable machine to a high position.<br>
+                2. Stand in the middle of the machine, grabbing one handle in each hand.<br>
+                3. Take a step forward, keeping a slight bend in your elbows.<br>
+                4. Bring your hands together in front of your body, crossing them over each other at chest level.<br>
+                5. Squeeze your inner chest muscles at the center of the movement.<br>
+                6. Slowly release back to the starting position.<br>
+                7. Aim for 3 sets of 10-12 repetitions with controlled movements and focus on feeling the contraction in your inner chest.<br>
+                
+                This exercise effectively isolates the inner chest muscles for better definition.</p>
+            <a href="#exercise" onclick="showInnerChest()">close</a>
+        </div>
+        <div id="popup-middlechest" class="popup-middlechest">
+            
+            <img src="img-exe/middlechest.jpg">
+            <h3>MIDDLECHEST</h3>
+            <p>To target the middle chest, you can perform the flat bench dumbbell press:<br>
+
+                1. Lie flat on a bench with a dumbbell in each hand, palms facing forward.<br>
+                2. Position the dumbbells at chest level, elbows bent at 90 degrees.<br>
+                3. Press the dumbbells up and together until your arms are fully extended, but don't lock your elbows.<br>
+                4. Lower the dumbbells back down to chest level in a controlled manner.<br>
+                5. Keep your core engaged and back flat throughout the exercise.<br>
+                6. Aim for 3 sets of 8-12 repetitions with proper form and a weight that challenges you without sacrificing technique.<br>
+                
+                This exercise effectively works the middle chest muscles for overall chest development.</p>
+            <a href="#exercise" onclick="showMiddleChest()">close</a>
+        </div>
+        <div id="popup-trapezius" class="popup-trapezius">
+            
+            <img src="img-exe/trapezius.jpg">
+            <h3>TRAPEZIUS</h3>
+            <p>To target the trapezius muscles, you can perform dumbbell shrugs:<br>
+
+                1. Stand up straight with a dumbbell in each hand, arms fully extended by your sides, palms facing your body.<br>
+                2. Keep your core engaged and your shoulders relaxed.<br>
+                3. Lift your shoulders towards your ears as high as you can, shrugging them upward.<br>
+                4. Hold the contraction for a brief moment at the top.<br>
+                5. Slowly lower your shoulders back down to the starting position.<br>
+                6. Avoid rolling your shoulders forward or backward.<br>
+                7. Aim for 3 sets of 10-15 repetitions with a weight that challenges you without compromising form.<br>
+                
+                This exercise effectively strengthens and develops the trapezius muscles.</p>
+            <a href="#exercise" onclick="showTrapezius()">close</a>
+        </div>
+        <div id="popup-lats" class="popup-lats">
+            
+            <img src="img-exe/lats.jpg">
+            <h3>LATS</h3>
+            <p>To target the latissimus dorsi (lats), you can perform lat pulldowns:<br>
+
+                1. Sit at a lat pulldown machine with your knees secured under the pads.<br>
+                2. Grab the wide bar with an overhand grip, hands slightly wider than shoulder-width apart.<br>
+                3. Keep your back straight, chest up, and shoulders down.<br>
+                4. Pull the bar down towards your chest by engaging your lats, squeezing them at the bottom.<br>
+                5. Slowly release the bar back up to the starting position, maintaining control.<br>
+                6. Avoid using momentum or swinging your body.<br>
+                7. Aim for 3 sets of 10-12 repetitions with a weight that challenges you while maintaining proper form.<br>
+                
+                This exercise effectively targets and strengthens the lats.</p>
+            <a href="#exercise" onclick="showLats()">close</a>
+        </div>
+        <div id="popup-rhombodis" class="popup-rhombodis">
+            
+            <img src="img-exe/rhombodis.jpg">
+            <h3>RHOMBODIS</h3>
+            <p>To target the rhomboids, you can perform dumbbell bent-over rows:<br>
+
+                1. Stand with feet shoulder-width apart, holding a dumbbell in each hand, palms facing your body.<br>
+                2. Bend your knees slightly and hinge at your hips to lean forward, keeping your back flat.<br>
+                3. Engage your core and keep your spine neutral.<br>
+                4. Pull the dumbbells towards your sides, driving your elbows back and squeezing your shoulder blades together.<br>
+                5. Keep your elbows close to your body throughout the movement.<br>
+                6. Lower the dumbbells back down with control.<br>
+                7. Aim for 3 sets of 10-12 repetitions with a weight that challenges you without sacrificing form.<br>
+                
+                This exercise effectively strengthens the rhomboid muscles.</p>
+                <a href="#exercise" onclick="showRhombodis()">close</a>
+
+        </div>
+        <div id="popup-lowerback" class="popup-lowerback">
+            
+            <img src="img-exe/lowerback.jpg">
+            <h3>LOWERBACK</h3>
+            <p>To strengthen your lower back, you can perform the superman exercise:<br>
+
+                1. Lie face down on a mat with your arms extended in front of you.<br>
+                2. Keep your legs straight and together.<br>
+                3. Lift your arms and legs off the ground simultaneously, engaging your lower back muscles.<br>
+                4. Hold the lifted position for a few seconds, focusing on contracting your lower back.<br>
+                5. Lower your arms and legs back down to the starting position.<br>
+                6. Repeat for 3 sets of 10-12 repetitions.<br>
+                7. Remember to breathe steadily throughout the exercise and avoid straining your neck.<br>
+                8. This exercise helps improve lower back strength and stability.</p>
+            <a href="#exercise" onclick="showLowerBack()">close</a>
+        </div>
+        <div id="popup-upperabs" class="popup-upperabs">
+            
+            <img src="img-exe/upperabs.jpg">
+            <h3>UPPERABS</h3>
+            <p>To target your upper abs, you can perform crunches:<br>
+
+                1. Lie flat on your back on a mat with your knees bent and feet flat on the floor.<br>
+                2. Place your hands gently behind your head, elbows pointing out to the sides.<br>
+                3. Engage your core muscles by pulling your belly button towards your spine.<br>
+                4. Lift your shoulder blades off the floor by curling your upper body towards your knees.<br>
+                5. Exhale as you crunch up, keeping your lower back on the mat.<br>
+                6. Inhale as you lower back down slowly with control.<br>
+                7. Aim for 3 sets of 15-20 repetitions.<br>
+                
+                This exercise effectively targets the upper abdominal muscles.</p>
+            <a href="#exercise" onclick="showUpperAbs()">close</a>
+        </div>
+        <div id="popup-lowerabs" class="popup-lowerabs">
+            
+            <img src="img-exe/lowerabs.jpg">
+            <h3>LOWERABS</h3>
+            <p>To target your lower abs, you can perform leg raises:<br>
+
+                1. Lie flat on your back on a mat with your arms by your sides and palms facing down.<br>
+                2. Keep your legs straight and together.<br>
+                3. Lift your legs off the floor, keeping them straight, until they form a 90-degree angle with your torso.<br>
+                4. Lower your legs back down slowly, but don't let them touch the floor.<br>
+                5. Keep your lower back pressed into the mat throughout the movement.<br>
+                6. Exhale as you raise your legs, and inhale as you lower them.<br>
+                7. Aim for 3 sets of 12-15 repetitions.<br>
+                
+                This exercise effectively targets the lower abdominal muscles.</p>
+            <a href="#exercise" onclick="showLowerAbs()">close</a>
+        </div>
+        <div id="popup-quads" class="popup-quads">
+            
+            <img src="img-exe/quads.jpg">
+            <h3>QUADS</h3>
+            <p>To work your quadriceps (quads), you can perform squats:<br>
+
+                1. Stand with your feet shoulder-width apart, toes pointing slightly outward.<br>
+                2. Keep your chest up and your back straight.<br>
+                3. Lower your body by bending your knees and hips, as if you're sitting back into an imaginary chair.<br>
+                4. Lower down until your thighs are parallel to the ground, or as far as comfortable.<br>
+                5. Keep your knees aligned with your toes, and don't let them go past your toes.<br>
+                6. Push through your heels to return to the starting position.<br>
+                7. Aim for 3 sets of 10-12 repetitions.<br>
+                
+                Squats effectively target and strengthen your quadriceps muscles.</p>
+            <a href="#exercise" onclick="showQuads()">close</a>
+        </div>
+        <div id="popup-hamstrings" class="popup-hamstrings">
+            
+            <img src="img-exe/hamstrings.jpg">
+            <h3>HAMSTRINGS</h3>
+            <p>To target your hamstrings, you can perform lying leg curls:<br>
+
+                1. Lie face down on a leg curl machine with your legs fully extended and your heels against the padded lever.<br>
+                2. Grasp the handles for stability.<br>
+                3. Exhale and bend your knees, pulling the pad towards your glutes.<br>
+                4. Keep your hips pressed into the bench and your upper body stable.<br>
+                5. Hold the contraction briefly, then inhale as you slowly extend your legs back to the starting position.<br>
+                6. Avoid arching your back or lifting your hips off the bench.<br>
+                7. Aim for 3 sets of 10-12 repetitions with controlled movements.<br>
+                
+                Lying leg curls effectively target and strengthen your hamstrings.</p>
+            <a href="#exercise" onclick="showHamstrings()">close</a>
+        </div>
+        <div id="popup-glutes" class="popup-glutes">
+            
+            <img src="img-exe/glutes.jpg">
+            <h3>GLUTES</h3>
+            <p>To target your glutes effectively, you can perform hip thrusts:<br>
+
+                1. Sit on the floor with your upper back against a bench and your knees bent, feet flat on the floor.<br>
+                2. Roll a barbell over your hips, ensuring it's padded for comfort.<br>
+                3. Engage your core and drive through your heels to lift your hips upward until your body forms a straight line from your shoulders to your knees.<br>
+                4. Squeeze your glutes at the top of the movement.<br>
+                5. Lower your hips back down to the starting position.<br>
+                6. Aim for 3 sets of 10-12 repetitions with proper form and control.<br>
+                
+                Hip thrusts effectively activate and strengthen your glutes.</p>
+            <a href="#exercise" onclick="showGlutes()">close</a>
+        </div>
+        <div id="popup-claves" class="popup-claves">
+            
+            <img src="img-exe/claves.jpg">
+            <h3>CLAVES</h3>
+            <p>To target your calves effectively, you can perform standing calf raises:<br>
+
+                1. Stand tall with your feet hip-width apart on the edge of a step or platform, heels hanging off the edge.<br>
+                2. Hold onto a railing or wall for support if needed.<br>
+                3. Slowly lift your heels as high as possible by pushing through the balls of your feet.<br>
+                4. Hold the contraction at the top for a moment, squeezing your calf muscles.<br>
+                5. Lower your heels back down below the level of the step, feeling a stretch in your calves.<br>
+                6. Aim for 3 sets of 12-15 repetitions with controlled movements.<br>
+                
+                Standing calf raises effectively strengthen and define your calf muscles.</p>
+            <a href="#exercise" onclick="showClaves()">close</a>
+        </div>
+   
+        <script src="script-home.js"></script>
+    </body>
+</html>
