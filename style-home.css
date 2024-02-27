@@ -810,6 +810,7 @@ border-radius: 5px;
    display: flex;
    align-items: center;
    padding : 10px 20px;
+        width: 50%;
  }
  input{
    flex: 1;
@@ -854,5 +855,85 @@ border-radius: 5px;
  .result-box{
    max-height: 300px;
    overflow-y: scroll;
+     width: 50%;
  }
- 
+#search-box{
+   position: relative;
+   top: 40%;
+   left: 45%;
+   right: 10%;
+   transform: translate(-50%,-50%);
+   width: 1350px;
+   height: 750px;
+   padding: 100px;
+   margin: 100px;
+   margin-right:120px; 
+   box-shadow:0 5px 30px rgba(0,0,0,.30);
+   background: #fff;
+   transition: 0.5s;
+   border-radius: 20px;
+   display: none;
+}
+
+ .icon-close{
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 45px;
+   height: 45px;
+   background: grey;
+   font-size: 2em;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-bottom-left-radius: 20px ;
+   border-top-right-radius: 20px ;
+   cursor: pointer;
+   z-index: 1;
+}
+ .vid-shoulder{
+   display: none;
+}
+.vid-bicep{
+   display: none;
+}
+.vid-tricep{
+   display: none;
+}
+.vid-forearm{
+   display: none;
+}
+.vid-upperchest{
+   display: none;
+}
+.vid-lowerchest{
+   display: none;
+}
+.vid-trapzius{
+   display: none;
+}
+.vid-lats{
+   display: none;
+}
+.vid-back{
+   display: none;
+}
+.vid-lowerabs{
+   display: none;
+}
+.vid-upperabs{
+   display: none;
+}
+.vid-quads{
+   display: none;
+}
+.vid-hamstrings{
+   display: none;
+}
+.vid-glutes{
+   display: none;
+}
+.vid-claves{
+   display: none;
+}
