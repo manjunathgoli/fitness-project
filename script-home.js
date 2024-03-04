@@ -225,21 +225,33 @@ function showClaves(){
     isShow_Claves = true;
     }
 }
+let search_box = document.querySelector(".search-box");
+let isSearch = true;
+function showSearch(){
+    if(isSearch){
+        search_box.style.display = "block";
+        isSearch = false;
+    }
+    else{
+        search_box.style.display = "none";
+        isSearch = true;
+    }
+}
 let available=[
     'shoulders',
     'biceps',
     'triceps',
     'forearm',
-    'upper chest',
-    'lower Chest',
-    'inner chest',
-    'middle chest',
+    'upperchest',
+    'lowerchest',
+    'innerchest',
+    'middlechest',
     'trapezius',
     'lats',
     'rhomboids',
-    'lower back',
-    'upper abs',
-    'lower abs',
+    'lowerback',
+    'upperabs',
+    'lowerabs',
     'quads',
     'hamstrings',
     'glutes',
@@ -267,7 +279,7 @@ inputBox.onkeyup = function(){
 }
 function display(result){
     const content = result.map((list)=>{
-        return "<li onclick=selectInput(this)>" + list + "</li>"
+        return "<li onclick=selectInput(this);show"+list+"Vid()>" + list + "</li>"
 
     });
 
@@ -276,4 +288,662 @@ function display(result){
 function selectInput(list){
     inputBox.value = list.innerHTML;
     resultsBox.innerHTML = '';
+}
+let bicep_exe = document.querySelector(".vid-bicep");
+let isShow_bicep_vid = true;
+function showbicepsVid(){ 
+    if(isShow_bicep_vid){
+        bicep_exe.style.display = "block";
+    isShow_bicep_vid = false;
+    }
+    else{
+        bicep_exe.style.display = "none";
+        isShow_bicep_vid = true;
+    }
+}
+let shoulder_exe = document.querySelector(".vid-shoulder");
+let isShow_shoulder_vid = true;
+function showshouldersVid(){ 
+    if(isShow_shoulder_vid){
+        shoulder_exe.style.display = "block";
+    isShow_shoulder_vid = false;
+    }
+    else{
+        shoulder_exe.style.display = "none";
+        isShow_shoulder_vid = true;
+    }
+}
+let tricep_exe = document.querySelector(".vid-tricep");
+let isShow_tricep_vid = true;
+function showtricepsVid(){ 
+    if(isShow_tricep_vid){
+        tricep_exe.style.display = "block";
+    isShow_tricep_vid = false;
+    }
+    else{
+        tricep_exe.style.display = "none";
+        isShow_tricep_vid = true;
+    }
+}
+let forearm_exe = document.querySelector(".vid-forearm");
+let isShow_forearm_vid = true;
+function showforearmVid(){ 
+    if(isShow_forearm_vid){
+        forearm_exe.style.display = "block";
+    isShow_forearm_vid = false;
+    }
+    else{
+        forearm_exe.style.display = "none";
+        isShow_forearm_vid = true;
+    }
+}
+let upperchest_exe = document.querySelector(".vid-upperchest");
+let isShow_upperchest_vid = true;
+function showupperchestVid(){ 
+    if(isShow_upperchest_vid){
+        upperchest_exe.style.display = "block";
+    isShow_upperchest_vid = false;
+    }
+    else{
+        upperchest_exe.style.display = "none";
+        isShow_upperchest_vid = true;
+    }
+}
+let lowerchest_exe = document.querySelector(".vid-lowerchest");
+let isShow_lowerchest_vid = true;
+function showlowerchestVid(){ 
+    if(isShow_lowerchest_vid){
+        lowerchest_exe.style.display = "block";
+    isShow_lowerchest_vid = false;
+    }
+    else{
+        lowerchest_exe.style.display = "none";
+        isShow_lowerchest_vid = true;
+    }
+}
+let innerchest_exe = document.querySelector(".vid-innerchest");
+let isShow_innerchest_vid = true;
+function showlowerchestVid(){ 
+    if(isShow_innerchest_vid){
+        innerchest_exe.style.display = "block";
+    isShow_innerchest_vid = false;
+    }
+    else{
+        innerchest_exe.style.display = "none";
+        isShow_innerchest_vid = true;
+    }
+}
+let trapezius_exe = document.querySelector(".vid-trapezius");
+let isShow_trapezius_vid = true;
+function showtrapeziusVid(){ 
+    if(isShow_trapezius_vid){
+        trapezius_exe.style.display = "block";
+    isShow_trapezius_vid = false;
+    }
+    else{
+        trapezius_exe.style.display = "none";
+        isShow_trapezius_vid = true;
+    }
+}
+let lats_exe = document.querySelector(".vid-lats");
+let isShow_lats_vid = true;
+function showlatsVid(){ 
+    if(isShow_lats_vid){
+        trapezius_exe.style.display = "block";
+    isShow_lats_vid = false;
+    }
+    else{
+        lats_exe.style.display = "none";
+        isShow_lats_vid = true;
+    }
+}
+let rhombodis_exe = document.querySelector(".vid-rhombodis");
+let isShow_rhombodis_vid = true;
+function showrlatsVid(){ 
+    if(isShow_rhombodis_vid){
+        rhombodis_exe.style.display = "block";
+    isShow_rhombodis_vid = false;
+    }
+    else{
+        rhombodis_exe.style.display = "none";
+        isShow_rhombodis_vid = true;
+    }
+}
+let lowerback_exe = document.querySelector(".vid-lowerback");
+let isShow_lowerback_vid = true;
+function showlatsVid(){ 
+    if(isShow_lowerback_vid){
+        lowerback_exe.style.display = "block";
+    isShow_lowerback_vid = false;
+    }
+    else{
+        lowerback_exe.style.display = "none";
+        isShow_lowerback_vid = true;
+    }
+}
+let upperabs_exe = document.querySelector(".vid-upperabs");
+let isShow_upperabs_vid = true;
+function showupperabsVid(){ 
+    if(isShow_upperabs_vid){
+        upperabs_exe.style.display = "block";
+    isShow_upperabs_vid = false;
+    }
+    else{
+        upperabs_exe.style.display = "none";
+        isShow_upperabs_vid = true;
+    }
+}
+let lowerabs_exe = document.querySelector(".vid-lowerabs");
+let isShow_lowerabs_vid = true;
+function showlowerabsVid(){ 
+    if(isShow_lowerabs_vid){
+        lowerabs_exe.style.display = "block";
+    isShow_lowerabs_vid = false;
+    }
+    else{
+        lowerabs_exe.style.display = "none";
+        isShow_lowerabs_vid = true;
+    }
+}
+let quads_exe = document.querySelector(".vid-quads");
+let isShow_quads_vid = true;
+function showquadsVid(){ 
+    if(isShow_quads_vid){
+       quads_exe.style.display = "block";
+    isShow_quads_vid = false;
+    }
+    else{
+        quads_exe.style.display = "none";
+        isShow_quads_vid = true;
+    }
+}
+let hamstrings_exe = document.querySelector(".vid-hamstrings");
+let isShow_hamstrings_vid = true;
+function showhamstringsVid(){ 
+    if(isShow_hamstrings_vid){
+        hamstrings_exe.style.display = "block";
+    isShow_hamstrings_vid = false;
+    }
+    else{
+        hamstrings_exe.style.display = "none";
+        isShow_hamstrings_vid = true;
+    }
+}
+let glutes_exe = document.querySelector(".vid-glutes");
+let isShow_glutes_vid = true;
+function showglutesVid(){ 
+    if(isShow_glutes_vid){
+        glutes_exe.style.display = "block";
+    isShow_glutes_vid = false;
+    }
+    else{
+        glutes_exe.style.display = "none";
+        isShow_glutes_vid = true;
+    }
+}
+let claves_exe = document.querySelector(".vid-claves");
+let isShow_claves_vid = true;
+function showclavesVid(){ 
+    if(isShow_claves_vid){
+        claves_exe.style.display = "block";
+    isShow_claves_vid = false;
+    }
+    else{
+        claves_exe.style.display = "none";
+        isShow_claves_vid = true;
+    }
+}
+let cal_popup = document.querySelector(".cal-container");
+let isShow_cal_popup  = true;
+function showcalh2(){ 
+    if(isShow_cal_popup){
+        cal_popup.style.display = "block";
+        isShow_cal_popup = false;
+    }
+    else{
+        cal_popup.style.display = "none";
+        isShow_cal_popup = true;
+    }
+}
+let cal_h2 = document.querySelector(".cont-h2");
+let isShow_cal_h2  = true;
+function showcalender(){ 
+    if(isShow_cal_h2){
+        cal_h2.style.display = "none";
+        isShow_cal_h2 = false;
+    }
+    else{
+        cal_h2.style.display = "block";
+        isShow_cal_h2 = true;
+    }
+}
+
+const calendar = document.querySelector(".calendar"),
+  date = document.querySelector(".date"),
+  daysContainer = document.querySelector(".days"),
+  prev = document.querySelector(".prev"),
+  next = document.querySelector(".next"),
+  todayBtn = document.querySelector(".today-btn"),
+  gotoBtn = document.querySelector(".goto-btn"),
+  dateInput = document.querySelector(".date-input"),
+  eventDay = document.querySelector(".event-day"),
+  eventDate = document.querySelector(".event-date"),
+  eventsContainer = document.querySelector(".events"),
+  addEventBtn = document.querySelector(".add-event"),
+  addEventWrapper = document.querySelector(".add-event-wrapper "),
+  addEventCloseBtn = document.querySelector(".close "),
+  addEventTitle = document.querySelector(".event-name "),
+  addEventFrom = document.querySelector(".event-time-from "),
+  addEventTo = document.querySelector(".event-time-to "),
+  addEventSubmit = document.querySelector(".add-event-btn ");
+
+let today = new Date();
+let activeDay;
+let month = today.getMonth();
+let year = today.getFullYear();
+
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+const eventsArr = [];
+getEvents();
+console.log(eventsArr);
+
+
+function initCalendar() {
+  const firstDay = new Date(year, month, 1);
+  const lastDay = new Date(year, month + 1, 0);
+  const prevLastDay = new Date(year, month, 0);
+  const prevDays = prevLastDay.getDate();
+  const lastDate = lastDay.getDate();
+  const day = firstDay.getDay();
+  const nextDays = 7 - lastDay.getDay() - 1;
+
+  date.innerHTML = months[month] + " " + year;
+
+  let days = "";
+
+  for (let x = day; x > 0; x--) {
+    days += `<div class="day prev-date">${prevDays - x + 1}</div>`;
+  }
+
+  for (let i = 1; i <= lastDate; i++) {
+    let event = false;
+    eventsArr.forEach((eventObj) => {
+      if (
+        eventObj.day === i &&
+        eventObj.month === month + 1 &&
+        eventObj.year === year
+      ) {
+        event = true;
+      }
+    });
+    if (
+      i === new Date().getDate() &&
+      year === new Date().getFullYear() &&
+      month === new Date().getMonth()
+    ) {
+      activeDay = i;
+      getActiveDay(i);
+      updateEvents(i);
+      if (event) {
+        days += `<div class="day today active event">${i}</div>`;
+      } else {
+        days += `<div class="day today active">${i}</div>`;
+      }
+    } else {
+      if (event) {
+        days += `<div class="day event">${i}</div>`;
+      } else {
+        days += `<div class="day ">${i}</div>`;
+      }
+    }
+  }
+
+  for (let j = 1; j <= nextDays; j++) {
+    days += `<div class="day next-date">${j}</div>`;
+  }
+  daysContainer.innerHTML = days;
+  addListner();
+}
+
+function prevMonth() {
+  month--;
+  if (month < 0) {
+    month = 11;
+    year--;
+  }
+  initCalendar();
+}
+
+function nextMonth() {
+  month++;
+  if (month > 11) {
+    month = 0;
+    year++;
+  }
+  initCalendar();
+}
+
+prev.addEventListener("click", prevMonth);
+next.addEventListener("click", nextMonth);
+
+initCalendar();
+
+function addListner() {
+  const days = document.querySelectorAll(".day");
+  days.forEach((day) => {
+    day.addEventListener("click", (e) => {
+      getActiveDay(e.target.innerHTML);
+      updateEvents(Number(e.target.innerHTML));
+      activeDay = Number(e.target.innerHTML);
+
+      days.forEach((day) => {
+        day.classList.remove("active");
+      });
+
+      if (e.target.classList.contains("prev-date")) {
+        prevMonth();
+        setTimeout(() => {
+          const days = document.querySelectorAll(".day");
+          days.forEach((day) => {
+            if (
+              !day.classList.contains("prev-date") &&
+              day.innerHTML === e.target.innerHTML
+            ) {
+              day.classList.add("active");
+            }
+          });
+        }, 100);
+      } else if (e.target.classList.contains("next-date")) {
+        nextMonth();
+        setTimeout(() => {
+          const days = document.querySelectorAll(".day");
+          days.forEach((day) => {
+            if (
+              !day.classList.contains("next-date") &&
+              day.innerHTML === e.target.innerHTML
+            ) {
+              day.classList.add("active");
+            }
+          });
+        }, 100);
+      } else {
+        e.target.classList.add("active");
+      }
+    });
+  });
+}
+
+todayBtn.addEventListener("click", () => {
+  today = new Date();
+  month = today.getMonth();
+  year = today.getFullYear();
+  initCalendar();
+});
+
+dateInput.addEventListener("input", (e) => {
+  dateInput.value = dateInput.value.replace(/[^0-9/]/g, "");
+  if (dateInput.value.length === 2) {
+    dateInput.value += "/";
+  }
+  if (dateInput.value.length > 7) {
+    dateInput.value = dateInput.value.slice(0, 7);
+  }
+  if (e.inputType === "deleteContentBackward") {
+    if (dateInput.value.length === 3) {
+      dateInput.value = dateInput.value.slice(0, 2);
+    }
+  }
+});
+
+gotoBtn.addEventListener("click", gotoDate);
+
+function gotoDate() {
+  console.log("here");
+  const dateArr = dateInput.value.split("/");
+  if (dateArr.length === 2) {
+    if (dateArr[0] > 0 && dateArr[0] < 13 && dateArr[1].length === 4) {
+      month = dateArr[0] - 1;
+      year = dateArr[1];
+      initCalendar();
+      return;
+    }
+  }
+  alert("Invalid Date");
+}
+
+function getActiveDay(date) {
+  const day = new Date(year, month, date);
+  const dayName = day.toString().split(" ")[0];
+  eventDay.innerHTML = dayName;
+  eventDate.innerHTML = date + " " + months[month] + " " + year;
+}
+
+function updateEvents(date) {
+  let events = "";
+  eventsArr.forEach((event) => {
+    if (
+      date === event.day &&
+      month + 1 === event.month &&
+      year === event.year
+    ) {
+      event.events.forEach((event) => {
+        events += `<div class="event">
+            <div class="title">
+              <i class="fas fa-circle"></i>
+              <h3 class="event-title">${event.title}</h3>
+            </div>
+            <div class="event-time">
+              <span class="event-time">${event.time}</span>
+            </div>
+        </div>`;
+      });
+    }
+  });
+  if (events === "") {
+    events = `<div class="no-event">
+            <h3>No Events</h3>
+        </div>`;
+  }
+  eventsContainer.innerHTML = events;
+  saveEvents();
+}
+
+addEventBtn.addEventListener("click", () => {
+  addEventWrapper.classList.toggle("active");
+});
+
+addEventCloseBtn.addEventListener("click", () => {
+  addEventWrapper.classList.remove("active");
+});
+
+document.addEventListener("click", (e) => {
+  if (e.target !== addEventBtn && !addEventWrapper.contains(e.target)) {
+    addEventWrapper.classList.remove("active");
+  }
+});
+
+addEventTitle.addEventListener("input", (e) => {
+  addEventTitle.value = addEventTitle.value.slice(0, 60);
+});
+
+
+addEventFrom.addEventListener("input", (e) => {
+  addEventFrom.value = addEventFrom.value.replace(/[^0-9:]/g, "");
+  if (addEventFrom.value.length === 2) {
+    addEventFrom.value += ":";
+  }
+  if (addEventFrom.value.length > 5) {
+    addEventFrom.value = addEventFrom.value.slice(0, 5);
+  }
+});
+
+addEventTo.addEventListener("input", (e) => {
+  addEventTo.value = addEventTo.value.replace(/[^0-9:]/g, "");
+  if (addEventTo.value.length === 2) {
+    addEventTo.value += ":";
+  }
+  if (addEventTo.value.length > 5) {
+    addEventTo.value = addEventTo.value.slice(0, 5);
+  }
+});
+
+addEventSubmit.addEventListener("click", () => {
+  const eventTitle = addEventTitle.value;
+  const eventTimeFrom = addEventFrom.value;
+  const eventTimeTo = addEventTo.value;
+  if (eventTitle === "" || eventTimeFrom === "" || eventTimeTo === "") {
+    alert("Please fill all the fields");
+    return;
+  }
+
+  const timeFromArr = eventTimeFrom.split(":");
+  const timeToArr = eventTimeTo.split(":");
+  if (
+    timeFromArr.length !== 2 ||
+    timeToArr.length !== 2 ||
+    timeFromArr[0] > 23 ||
+    timeFromArr[1] > 59 ||
+    timeToArr[0] > 23 ||
+    timeToArr[1] > 59
+  ) {
+    alert("Invalid Time Format");
+    return;
+  }
+
+  const timeFrom = convertTime(eventTimeFrom);
+  const timeTo = convertTime(eventTimeTo);
+
+  let eventExist = false;
+  eventsArr.forEach((event) => {
+    if (
+      event.day === activeDay &&
+      event.month === month + 1 &&
+      event.year === year
+    ) {
+      event.events.forEach((event) => {
+        if (event.title === eventTitle) {
+          eventExist = true;
+        }
+      });
+    }
+  });
+  if (eventExist) {
+    alert("Event already added");
+    return;
+  }
+  const newEvent = {
+    title: eventTitle,
+    time: timeFrom + " - " + timeTo,
+  };
+  console.log(newEvent);
+  console.log(activeDay);
+  let eventAdded = false;
+  if (eventsArr.length > 0) {
+    eventsArr.forEach((item) => {
+      if (
+        item.day === activeDay &&
+        item.month === month + 1 &&
+        item.year === year
+      ) {
+        item.events.push(newEvent);
+        eventAdded = true;
+      }
+    });
+  }
+
+  if (!eventAdded) {
+    eventsArr.push({
+      day: activeDay,
+      month: month + 1,
+      year: year,
+      events: [newEvent],
+    });
+  }
+
+  console.log(eventsArr);
+  addEventWrapper.classList.remove("active");
+  addEventTitle.value = "";
+  addEventFrom.value = "";
+  addEventTo.value = "";
+  updateEvents(activeDay);
+  const activeDayEl = document.querySelector(".day.active");
+  if (!activeDayEl.classList.contains("event")) {
+    activeDayEl.classList.add("event");
+  }
+});
+
+eventsContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("event")) {
+    if (confirm("Are you sure you want to delete this event?")) {
+      const eventTitle = e.target.children[0].children[1].innerHTML;
+      eventsArr.forEach((event) => {
+        if (
+          event.day === activeDay &&
+          event.month === month + 1 &&
+          event.year === year
+        ) {
+          event.events.forEach((item, index) => {
+            if (item.title === eventTitle) {
+              event.events.splice(index, 1);
+            }
+          });
+          if (event.events.length === 0) {
+            eventsArr.splice(eventsArr.indexOf(event), 1);
+            const activeDayEl = document.querySelector(".day.active");
+            if (activeDayEl.classList.contains("event")) {
+              activeDayEl.classList.remove("event");
+            }
+          }
+        }
+      });
+      updateEvents(activeDay);
+    }
+  }
+});
+
+function saveEvents() {
+  localStorage.setItem("events", JSON.stringify(eventsArr));
+}
+
+function getEvents() {
+  if (localStorage.getItem("events") === null) {
+    return;
+  }
+  eventsArr.push(...JSON.parse(localStorage.getItem("events")));
+}
+
+function convertTime(time) {
+  let timeArr = time.split(":");
+  let timeHour = timeArr[0];
+  let timeMin = timeArr[1];
+  let timeFormat = timeHour >= 12 ? "PM" : "AM";
+  timeHour = timeHour % 12 || 12;
+  time = timeHour + ":" + timeMin + " " + timeFormat;
+  return time;
+}
+let diet_popup = document.querySelector(".diet-popup");
+let isdiet = true;
+function showdiet(){
+    if(isSearch){
+      diet_popup.style.display = "block";
+        isSearch = false;
+    }
+    else{
+      diet_popup.style.display = "none";
+        isdiet = true;
+    }
 }
