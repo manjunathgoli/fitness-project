@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
-    <body>
+    <body class="body">
         
         <header id="header">
             <h2 class="home-logo">FITNESS GUIDE</h2>
@@ -18,18 +18,21 @@
                 <a href="#diet-popup" onclick="showdiet()">Diet</a>
                 <a href="#daily-track" onclick="showcalender(),showcalh2()">Track</a>
                 <a href="#">Alerts</a>
-                <button id ="btnMenuHome">Menu</button>
+                <button id ="btnMenuHome" onclick="showmenu()">Menu</button>
             </nav>
-                <div id="side-menu" class="show-menu">
-                    <ul>
-                        <li><a href=#>1</a></li>
-                        <li><a href=#>1</a></li>
-                        <li><a href=#>1</a></li>
-                    </ul>
-                </div>
+                
             
         </header>
+        
         <div class="container">
+            <div id="side-menu" class="side-menu">
+                <nav class="nav-menu">
+                <a href="#">jai</a>
+                <a href="#">jai</a>
+                <a href="#">jai</a>
+                <a href="#">jai</a>
+            </nav>
+            </div>
             <h2 id="cont-h2" class="cont-h2" onclick="showcalh2()">HERE A NOOB CAN BECOME A FITNESS FREAK</h2>
             <div class="cal-size">
         <div id="daily-track"class="cal-container" >
@@ -496,19 +499,229 @@
             <iframe onclick="showclavesVid()"  width="560" height="315" src="https://www.youtube.com/embed/6xeFf7VHUdU?si=Z_3bn8YZIy1nhMSl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         </div>
+        
         <div class="diet-popup" id="diet-popup">
+            <header class="showheader"><nav class="nav-diet">
+                <button onclick="showcarbsmenu()">Carbs</button>
+                <button onclick="showproteinmenu(),showcarbsmenu()">Protein</button>
+                <button onclick="showfatmenu(),showproteinmenu()">Fats</button>
+                <button class="icon-close-diet" onclick="showdietcalsearch()"><span><ion-icon name="search-outline"></ion-icon></span></button>
+            </nav></header>
             <a href="" onclick="showdiet()"><span class="diet-icon-close"><ion-icon name="close-outline"></ion-icon></span></a>
+                <a onclick="showdietmenubtn(),showdietmenubtn(),showdietmenu(),showdietheader()" id="menu-btn-diet" class="menu-btn-diet"><span><ion-icon name="menu-outline"></ion-icon></span></a>
+                <div class="menu-diet" id="menu-diet">
             <section>
                 <nav>
                     <ul>
-                        <button><li>Cutting</li></button>
-                        <button><li>Bulcking</li></button>
-                        <button><li>Fit</li></button>
+                        <button><li onclick="showdietmenubtn(),showdietmenu()">Cutting</li></button>
+                        <button><li onclick="showdietmenubtn(),showdietmenu()">Bulcking</li></button>
+                        <button><li onclick="showdietmenubtn(),showdietmenu()">Fit</li></button>
                     </ul>
                 </nav>
             </section>
+            <div class="img-diet" style="margin-left: 100%; padding-left: 10%;">
+
+                <div class="carbs">
+                    <h2>Carbohydrates</h2>
+                    <img id="carbs-p-img" src="img-diet/charbs.jpg" onclick="showcarbsmenu(),showdietmenubtn(),showdietmenu(),showdietheader()">
+                    <p id="carbs-p">Carbohydrates:<br><br>
+                        Fruits: Apples, bananas, oranges, berries, grapes, mangoes, etc.<br>
+                        Vegetables: Carrots, broccoli, spinach, kale, peas, sweet potatoes, etc.<br>
+                        Grains: Wheat, rice, oats, barley, quinoa, bulgur, millet, etc.<br>
+                        Legumes: Beans (black beans, kidney beans, chickpeas), lentils, peas.<br>
+                        Dairy: Milk, yogurt, cheese.<br>
+                        Sugars: Table sugar, honey, maple syrup, agave nectar.<br>
+                        Sweets and Baked Goods: Cakes, cookies, pastries, candies, etc.<br>
+                    </p>
+                </div>
+                <div class="protein">
+                    <h2>PROTEINS</h2>
+                    <img id="protein-p-img"src="img-diet/protein.jpg"  onclick="showproteinmenu(),showdietmenubtn(),showdietmenu(),showdietheader()">
+                    <p id="protein-p">Proteins:<br><br>
+                        Meat: Beef, chicken, turkey, pork, lamb, etc.<br>
+                        Seafood: Fish (salmon, tuna, trout, cod), shrimp, crab, mussels, etc.<br>
+                        Poultry: Chicken, turkey, duck, etc.<br>
+                        Eggs: Chicken eggs, quail eggs, duck eggs, etc.<br>
+                        Dairy: Milk, cheese, yogurt, cottage cheese.<br>
+                        Legumes: Beans (black beans, kidney beans, chickpeas), lentils, peas.<br>
+                        Nuts and Seeds: Almonds, walnuts, peanuts, sunflower seeds, chia seeds, flaxseeds, etc.<br>
+                        Soy Products: Tofu, tempeh, edamame, soy milk.<br></p>
+                </div>
+                <div class="fats">
+                    <h2>FATS</h2>
+                    <img id="fats-p-img" src="img-diet/fats.jpg" onclick="showfatmenu(),showdietmenubtn(),showdietmenu(),showdietheader()">
+                    <p id="fats-p">Fats:<br><br>
+                        Oils: Olive oil, coconut oil, avocado oil, canola oil, sunflower oil, etc.<br>
+                        Butter and Margarine: Butter, ghee, margarine.<br>
+                        Nuts and Seeds: Almonds, walnuts, peanuts, sunflower seeds, chia seeds, flaxseeds, etc.<br>
+                        Avocados: Avocado slices, guacamole.<br>
+                        Fatty Fish: Salmon, mackerel, trout, sardines, tuna.<br>
+                        Coconut Products: Coconut milk, coconut cream, shredded coconut.<br>
+                        Dairy: Cheese, cream, full-fat yogurt, whole milk.<br>
+                        Processed Foods: Fast foods, fried foods, processed snacks, baked goods, etc.<br>
+                    </p>
+                </div>
+            </div>
+    </div>
+    <div class="carbs-menu-popup" id="carbs-menu-popup">
+        <p>Hello there! So you want to learn all about carbohydrates? Great choice! Carbohydrates are one of the three main macronutrients along with proteins and fats. They are essential for providing energy to our bodies, especially for kids like you who are growing and playing a lot.<br>
+            Let's break it down:<br>
+            
+            **What are carbohydrates?**<br>
+            Carbohydrates are molecules made up of carbon, hydrogen, and oxygen atoms. They are found in many foods like grains (bread, rice, pasta), fruits, vegetables, legumes (beans, lentils), and dairy products (milk, yogurt).<br>
+            
+            **Types of Carbohydrates:**<br>
+            1. **Simple Carbohydrates:** These are quickly digested and absorbed by the body, providing a rapid source of energy. Foods high in simple carbohydrates include candy, sugary drinks, and fruit juices.<br>
+               
+            2. **Complex Carbohydrates:** These take longer to digest and provide a more sustained release of energy. Foods high in complex carbohydrates include whole grains (oats, brown rice, whole wheat bread), starchy vegetables (potatoes, corn, peas), and legumes (beans, lentils).<br>
+            
+            **Why are carbohydrates important?**<br>
+            Carbohydrates are your body's main source of energy. They fuel your brain, muscles, and organs. They also help regulate blood sugar levels and support healthy digestion.<br>
+            
+            **How much carbohydrates do you need?**<br>
+            The amount of carbohydrates you need depends on factors like your age, activity level, and overall health. As a kid, you need a good amount of carbohydrates to support your growth, energy, and brain function. However, it's important to choose healthy sources of carbohydrates like fruits, vegetables, whole grains, and legumes rather than sugary snacks and drinks.<br>
+            
+            **Tips for choosing healthy carbohydrates:**<br>
+            1. **Go for Whole Grains:** Choose whole grain bread, pasta, and cereals instead of refined grains like white bread and white rice. Whole grains are higher in fiber and nutrients.<br>
+               
+            2. **Eat Plenty of Fruits and Vegetables:** These are not only rich in carbohydrates but also packed with vitamins, minerals, and fiber.<br>
+            
+            3. **Include Legumes:** Beans, lentils, and chickpeas are great sources of complex carbohydrates, protein, and fiber.<br>
+            
+            4. **Limit Sugary Foods:** While it's okay to enjoy treats occasionally, try to limit foods and drinks high in added sugars like candy, cookies, and soda.<br>
+            
+            Remember, it's all about balance! Eating a variety of healthy carbohydrates along with proteins, fats, vitamins, and minerals will help you grow strong and stay energized. If you have any more questions about carbohydrates or anything else related to nutrition, feel free to ask!</p>
+    </div>
+    <div class="protein-menu-popup" id="protein-menu-popup">
+        <p>
+            So, proteins are super cool because they're like the building blocks of life. They're essential for your body to grow, repair itself, and stay healthy. Think of them as little superheroes inside your body, doing all sorts of amazing things!<br>
+            
+            Proteins are made up of smaller units called amino acids. There are 20 different amino acids, and your body needs all of them to function properly. Some of these amino acids can be made by your body, but others, called essential amino acids, need to come from the food you eat.<br>
+            
+            Now, where can you find these awesome proteins? Well, they're hiding out in lots of different foods! Here are some great sources:<br>
+            
+            1. **Meat and Poultry**: Foods like chicken, turkey, beef, and pork are packed with protein. They're also a good source of other important nutrients like iron and B vitamins.<br>
+            
+            2. **Fish and Seafood**: Fish like salmon, tuna, and trout are not only delicious but also full of protein and healthy fats, like omega-3s, which are great for your brain and heart.<br>
+            
+            3. **Eggs**: Eggs are like little protein powerhouses! They're a fantastic source of high-quality protein and are super versatile. You can have them scrambled, boiled, poached, or turned into omelets.<br>
+            
+            4. **Dairy Products**: Milk, cheese, yogurt, and other dairy products are rich in protein, calcium, and other essential nutrients. Plus, they taste yummy!<br>
+            
+            5. **Plant-Based Foods**: If you're not into meat and dairy, don't worry! There are plenty of plant-based sources of protein too. Foods like beans, lentils, tofu, tempeh, nuts, seeds, and even whole grains like quinoa are all great options.<br>
+            
+            Now, it's important to try to include a variety of protein sources in your diet to make sure you're getting all the different amino acids your body needs. And don't forget to pair your proteins with other nutritious foods, like fruits, vegetables, and whole grains, to keep your meals balanced and delicious.<br>
+            
+            So, there you have it, kiddo! That's the lowdown on proteins. They're like the superheroes of the food world, keeping your body strong and healthy. If you have any more questions, feel free to ask!<br></p>
+        </div><div class="fat-menu-popup" id="fat-menu-popup">
+            <p>
+                Fats are another important part of a healthy diet, just like carbohydrates and proteins. They're like the fuel that keeps your body running smoothly. Fats are packed with energy, and they help your body absorb certain vitamins, protect your organs, and keep your skin and hair healthy.<br><br>
+                
+                Now, there are different types of fats, and some are healthier for you than others. Here's the lowdown:<br>
+                
+                1. **Saturated Fats**: These fats are usually solid at room temperature and are often found in animal products like meat, butter, cheese, and full-fat dairy products. While you don't need to avoid them completely, it's a good idea to limit your intake of saturated fats because they can raise your cholesterol levels and increase your risk of heart disease.<br>
+                
+                2. **Trans Fats**: These are the bad guys! Trans fats are created through a process called hydrogenation, which turns liquid oils into solid fats. They're often found in processed and fried foods, like fried chicken, French fries, and packaged snacks. Trans fats can raise your bad cholesterol levels and lower your good cholesterol levels, which is definitely not good for your heart. That's why it's best to avoid them as much as possible.<br>
+                
+                3. **Monounsaturated Fats**: These are the good guys! Monounsaturated fats are found in foods like olive oil, avocados, nuts, and seeds. They can help lower your bad cholesterol levels and reduce your risk of heart disease. Plus, they're delicious!<br>
+                
+                4. **Polyunsaturated Fats**: These fats are also good for you. They're found in foods like fatty fish (like salmon, mackerel, and sardines), flaxseeds, chia seeds, and walnuts. Polyunsaturated fats contain omega-3 and omega-6 fatty acids, which are essential for your brain health and can help reduce inflammation in your body.<br>
+                
+                So, when it comes to fats, the key is to choose the healthier options like monounsaturated and polyunsaturated fats, and to limit your intake of saturated and trans fats. And remember, fats are still high in calories, so it's important to enjoy them in moderation as part of a balanced diet.<br>
+                
+                I hope that helps explain fats a bit better! If you have any more questions, feel free to ask!<br></p>
         </div>
-        <script src="script-home.js"></script>
+        <div class="diet-cal-search-popup">
+            <div class="diet-container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <a href="#" onclick="showdietcalsearch()"><span class="icon-close"><ion-icon name="close-outline"></ion-icon></span></a>
+                        <img src="images-diet/logo.png" class="img-responsive logo mb-5 mt-5" />
+                        <form method="POST">
+                            <div class="input-group">
+                            <input type="text" name="query" class="form-control inputstyle" placeholder="search calory count" required>
+                            <button class="whoop" type="submit" id="button-addon2"><ion-icon name="search-outline"></ion-icon></button>
+                            </div>
+                        </form>
+                        <div class ="alert alert-warning"> Oh no! something went wrong.Please try again in sometime. </div>
+                        <h1 class="h1emoji"><strong class="calst1">  </strong> has a total of <strong class="calst2"> </strong> Calories
+                           <img src="images-diet/shocked.png" class="img-responsive" />
+                        </h1>
+                            <div class="width-100px alert alert-danger d-flex align-items-center mt-3" role="alert">
+                                <div>
+                                    This food contains an high amount of sodium. High Sodium causes Sever dehydration and water retention.
+                                </div>
+                              </div>
+                        <div class="alert alert-danger d-flex align-items-center mt-3" role="alert">
+                            <div>
+                                This food contains an high amount of sugar. Sugar causes insulin spikes and is a no.1 cause for Obesity.
+                            </div>
+                          </div>
+                </div>
+                
+                    <div class="col-md-10 caloriescont shadow rounded" style="display: block;">
+                        <div class="row">
+      
+                            <div class="nutritional">
+                                <h2 class="mt-3 mb-4">Nutritional Values </h2><span></span>
+                                <ul>
+                                    <li class="servingsize">Serving Size per 100/Grams <span class="float-end"></span></li>
+                                    <li>Carbohydrates: <span class="Carbohydrates">carbohydrates</span></li>
+                                    <li>Cholesterol: <span class="cholesterol_mg">cholesterol</span></li>
+                                    <li>Saturated fat: <span class="float-end fat_saturated_g">fat</span></li>
+                                    <li>Total Fat: <span class="float-end fat_total_g">api</span></li>
+                                    <li>Fiber Content: <span class="float-end fiber_g">api</span></li>
+                                    <li>Potassium <span class="float-end potassium_mg">api</span></li>
+                                    <li>Protein: <span class="float-end protein_g">api</span></li>
+                                    <li>Sodium:<span class="float-end sodium_mg">api</span></li>
+                                    <li>Sugar: <span class="float-end sugar_g">api</span></li>
+                                </ul>
+                            </div>
+                            <div class="calory">
+                                <h4 class="burncalory">To burn <span class="calst3" style="color: red;"> </span> calories you should</h4>
+                                <div class="d-flex align-items-center mb-5">
+                                    <div class="flex-shrink-0">
+                                        <img src="images-diet/running.png" alt="...">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5> Jog </h5>
+                                        <p>you will have to jog for <strong class="jogmin">  </strong> Minutes</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-5">
+                                    <div class="flex-shrink-0">
+                                        <img src="images-diet/yoga.png" alt="...">
+                                    </div>
+                                    <div class="flex-grow-1 ms-4">
+                                        <h5> Do Power Yoga </h5>
+                                        <p>you will have to Power Yoga for <strong class="yogamin">  </strong> Minutes</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-5">
+                                    <div class="flex-shrink-0">
+                                        <img src="images-diet/weightlifter.png" alt="...">
+                                    </div>
+                                    <div class="flex-grow-1 ms-4">
+                                        <h5>Get a Gym Workout </h5>
+                                        <p>you will have to lift weight for <strong class="gymmin">  </strong> Minutes </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="images-diet/walking.png" alt="...">
+                                    </div>
+                                    <div class="flex-grow-1 ms-1">
+                                        <h5> Go for a Brisk Walk </h5>
+                                        <p>you will have to brisk walk for <strong class="runmin">  </strong> Minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <script src="jquery3.7.1.js"></script>
+            <script src="script-home.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
